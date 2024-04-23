@@ -30,7 +30,7 @@ public class MyArrayList<T> implements MyList<T> {
         return (T) arr[index];
     }
 
-    public void addElement(int index, T data) {
+    public void add(int index, T data) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
         }
@@ -44,7 +44,7 @@ public class MyArrayList<T> implements MyList<T> {
         size++;
     }
 
-    public void addElement(T data) {
+    public void add(T data) {
         if (size == arr.length) {
             increaseBuffer();
         }
@@ -57,10 +57,10 @@ public class MyArrayList<T> implements MyList<T> {
         arr = newArr;
     }
     public void addFirst(T item) {
-        addElement(0, item);
+        add(0, item);
     }
     public void addLast(T item) {
-        addElement(size, item);
+        add(size, item);
     }
     public T getFirst() {
         return get(0);
