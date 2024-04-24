@@ -15,8 +15,11 @@ public class MyQueue<T> extends MyLinkedList {
     }
     public T enqueue(T newItem){
         addLast(newItem);
+        return newItem;
     }
     public T dequeue(){
-
+        T removingItem = peek();
+        removeFirst();
+        return removingItem;
     }
 }

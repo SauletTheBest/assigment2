@@ -19,7 +19,6 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public Iterator<T> iterator() {
-        // Реализуйте итератор для вашего списка
         return null;
     }
 
@@ -87,7 +86,7 @@ public class MyArrayList<T> implements MyList<T> {
     }
 
     public void sort() {
-        // Implement sorting algorithm (e.g., bubble sort, insertion sort, etc.) here
+
     }
 
     public int indexOf(Object object) {
